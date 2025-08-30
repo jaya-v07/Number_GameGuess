@@ -31,7 +31,9 @@ def guess_game():
                 print("Too Low!")
             elif guess > number_to_guess:
                 print("Too High!")
-            else:
+            elif guess-number_to_guess==1 or number_to_guess-guess==1:
+                print("You are very close!")
+            elif guess == number_to_guess:
                 print(f" Congratulations! You've guessed the number {number_to_guess} in {attempts} attempts.")
                 break
 
@@ -43,4 +45,5 @@ print("You have to guess a number between 1 and 100.")
 print("After each guess, you'll receive hints like 'Too High' or 'Too Low'.")
 print("Type 'exit' anytime to quit the game.")
 print("The game ends when you guess correctly, and it will display the number of attempts.\n")
+
 guess_game()
