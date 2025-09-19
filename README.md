@@ -99,5 +99,3 @@ The game is organized using functions for better code maintainability:
 This project is open source and available under the [MIT License](LICENSE).
 
 ---
-
-**Enjoy the game and happy guessing!** 🎲
